@@ -12,6 +12,13 @@
 		327C72281D1B35F5005B1051 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327C72261D1B35F5005B1051 /* Main.storyboard */; };
 		327C722A1D1B35F5005B1051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 327C72291D1B35F5005B1051 /* Assets.xcassets */; };
 		327C722D1D1B35F5005B1051 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327C722B1D1B35F5005B1051 /* LaunchScreen.storyboard */; };
+		327C723A1D1B3D30005B1051 /* dice1.png in Resources */ = {isa = PBXBuildFile; fileRef = 327C72341D1B3D30005B1051 /* dice1.png */; };
+		327C723B1D1B3D30005B1051 /* dice2.png in Resources */ = {isa = PBXBuildFile; fileRef = 327C72351D1B3D30005B1051 /* dice2.png */; };
+		327C723C1D1B3D30005B1051 /* dice3.png in Resources */ = {isa = PBXBuildFile; fileRef = 327C72361D1B3D30005B1051 /* dice3.png */; };
+		327C723D1D1B3D30005B1051 /* dice4.png in Resources */ = {isa = PBXBuildFile; fileRef = 327C72371D1B3D30005B1051 /* dice4.png */; };
+		327C723E1D1B3D30005B1051 /* dice5.png in Resources */ = {isa = PBXBuildFile; fileRef = 327C72381D1B3D30005B1051 /* dice5.png */; };
+		327C723F1D1B3D30005B1051 /* dice6.png in Resources */ = {isa = PBXBuildFile; fileRef = 327C72391D1B3D30005B1051 /* dice6.png */; };
+		327C72411D1B4183005B1051 /* wood-pattern.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327C72401D1B4183005B1051 /* wood-pattern.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		327C72291D1B35F5005B1051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		327C722C1D1B35F5005B1051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		327C722E1D1B35F5005B1051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327C72341D1B3D30005B1051 /* dice1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice1.png; sourceTree = "<group>"; };
+		327C72351D1B3D30005B1051 /* dice2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice2.png; sourceTree = "<group>"; };
+		327C72361D1B3D30005B1051 /* dice3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice3.png; sourceTree = "<group>"; };
+		327C72371D1B3D30005B1051 /* dice4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice4.png; sourceTree = "<group>"; };
+		327C72381D1B3D30005B1051 /* dice5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice5.png; sourceTree = "<group>"; };
+		327C72391D1B3D30005B1051 /* dice6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice6.png; sourceTree = "<group>"; };
+		327C72401D1B4183005B1051 /* wood-pattern.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wood-pattern.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,13 @@
 				327C72241D1B35F5005B1051 /* ViewController.swift */,
 				327C72261D1B35F5005B1051 /* Main.storyboard */,
 				327C72291D1B35F5005B1051 /* Assets.xcassets */,
+				327C72341D1B3D30005B1051 /* dice1.png */,
+				327C72351D1B3D30005B1051 /* dice2.png */,
+				327C72361D1B3D30005B1051 /* dice3.png */,
+				327C72371D1B3D30005B1051 /* dice4.png */,
+				327C72381D1B3D30005B1051 /* dice5.png */,
+				327C72391D1B3D30005B1051 /* dice6.png */,
+				327C72401D1B4183005B1051 /* wood-pattern.jpg */,
 				327C722B1D1B35F5005B1051 /* LaunchScreen.storyboard */,
 				327C722E1D1B35F5005B1051 /* Info.plist */,
 			);
@@ -96,6 +117,7 @@
 				TargetAttributes = {
 					327C721E1D1B35F5005B1051 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9LGC8333PK;
 					};
 				};
 			};
@@ -124,7 +146,14 @@
 			files = (
 				327C722D1D1B35F5005B1051 /* LaunchScreen.storyboard in Resources */,
 				327C722A1D1B35F5005B1051 /* Assets.xcassets in Resources */,
+				327C723B1D1B3D30005B1051 /* dice2.png in Resources */,
+				327C723A1D1B3D30005B1051 /* dice1.png in Resources */,
+				327C72411D1B4183005B1051 /* wood-pattern.jpg in Resources */,
+				327C723C1D1B3D30005B1051 /* dice3.png in Resources */,
 				327C72281D1B35F5005B1051 /* Main.storyboard in Resources */,
+				327C723E1D1B3D30005B1051 /* dice5.png in Resources */,
+				327C723F1D1B3D30005B1051 /* dice6.png in Resources */,
+				327C723D1D1B3D30005B1051 /* dice4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DiceGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kjensen.DiceGame.DiceGame;
@@ -262,6 +292,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DiceGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kjensen.DiceGame.DiceGame;

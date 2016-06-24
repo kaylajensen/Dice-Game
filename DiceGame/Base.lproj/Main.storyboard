@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DiceGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,114 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMM-R8-cO1">
+                                <rect key="frame" x="251" y="527" width="99" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="OFb-f9-GxI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Roll Dice!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="rollDiceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C1D-Uz-IUk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qX-JB-gzZ">
+                                <rect key="frame" x="20" y="49" width="149" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="2sA-Yy-jUy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LGP-OO-uoa">
+                                <rect key="frame" x="58" y="110" width="522" height="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bet:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gd-lM-zev">
+                                <rect key="frame" x="20" y="114" width="36" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember if you roll &quot;doubles&quot;, YOU must complete your own bet!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAX-TP-wiP">
+                                <rect key="frame" x="58" y="138" width="522" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCy-CU-XLE">
+                                <rect key="frame" x="250" y="187" width="100" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Lock in bet!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="placeBetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yIH-mi-2Hb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total: 7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGh-pb-QCt">
+                                <rect key="frame" x="265" y="486" width="71" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="8KQ-S6-AJF"/>
+                                    <constraint firstAttribute="height" constant="21" id="NyR-Ry-r1Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If I roll a 7..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJb-Wq-mjM">
+                                <rect key="frame" x="20" y="81" width="115" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="UZc-6N-m4w"/>
+                                    <constraint firstAttribute="width" constant="115" id="llp-25-fJS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LGP-OO-uoa" firstAttribute="top" secondItem="yJb-Wq-mjM" secondAttribute="bottom" constant="8" symbolic="YES" id="0gY-27-QTT"/>
+                            <constraint firstItem="IMM-R8-cO1" firstAttribute="centerX" secondItem="AGh-pb-QCt" secondAttribute="centerX" id="1Fk-LC-evm"/>
+                            <constraint firstItem="LGP-OO-uoa" firstAttribute="leading" secondItem="8gd-lM-zev" secondAttribute="trailing" constant="2" id="1b0-3L-g6i"/>
+                            <constraint firstItem="rCy-CU-XLE" firstAttribute="top" secondItem="OAX-TP-wiP" secondAttribute="bottom" constant="28" id="3E9-Ko-uhG"/>
+                            <constraint firstItem="rCy-CU-XLE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A2k-wV-8Qe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IMM-R8-cO1" secondAttribute="bottom" constant="43" id="ARm-lg-HWr"/>
+                            <constraint firstItem="9qX-JB-gzZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="G9T-6Q-bgw"/>
+                            <constraint firstItem="yJb-Wq-mjM" firstAttribute="top" secondItem="9qX-JB-gzZ" secondAttribute="bottom" constant="8" id="IHS-Fu-laf"/>
+                            <constraint firstItem="8gd-lM-zev" firstAttribute="centerY" secondItem="LGP-OO-uoa" secondAttribute="centerY" id="VVc-Kg-spL"/>
+                            <constraint firstItem="LGP-OO-uoa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Zjz-Sd-PKX"/>
+                            <constraint firstItem="9qX-JB-gzZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="ZnG-oX-3Te"/>
+                            <constraint firstItem="LGP-OO-uoa" firstAttribute="leading" secondItem="OAX-TP-wiP" secondAttribute="leading" id="cPF-wu-Sg1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8gd-lM-zev" secondAttribute="bottom" constant="465" id="dRu-xx-ZsL"/>
+                            <constraint firstItem="yJb-Wq-mjM" firstAttribute="leading" secondItem="8gd-lM-zev" secondAttribute="leading" id="euK-br-04C"/>
+                            <constraint firstItem="OAX-TP-wiP" firstAttribute="top" secondItem="yJb-Wq-mjM" secondAttribute="bottom" constant="36" id="nKd-Bn-dQA"/>
+                            <constraint firstItem="9qX-JB-gzZ" firstAttribute="leading" secondItem="yJb-Wq-mjM" secondAttribute="leading" id="ovu-Qo-R4C"/>
+                            <constraint firstItem="LGP-OO-uoa" firstAttribute="trailing" secondItem="OAX-TP-wiP" secondAttribute="trailing" id="qGl-9y-Oqf"/>
+                            <constraint firstItem="OAX-TP-wiP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="38" id="qyG-me-Eqw"/>
+                            <constraint firstItem="IMM-R8-cO1" firstAttribute="centerX" secondItem="rCy-CU-XLE" secondAttribute="centerX" id="tHt-Gw-gYj"/>
+                            <constraint firstItem="IMM-R8-cO1" firstAttribute="trailing" secondItem="rCy-CU-XLE" secondAttribute="trailing" id="uBl-s0-jWt"/>
+                            <constraint firstItem="IMM-R8-cO1" firstAttribute="top" secondItem="AGh-pb-QCt" secondAttribute="bottom" constant="20" id="uOz-HX-pk7"/>
+                            <constraint firstItem="rCy-CU-XLE" firstAttribute="top" secondItem="LGP-OO-uoa" secondAttribute="bottom" constant="47" id="wnf-Ll-t1F"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="betString" destination="LGP-OO-uoa" id="Hwz-bA-s6G"/>
+                        <outlet property="diceTotalLabel" destination="AGh-pb-QCt" id="ZcS-5O-D2I"/>
+                        <outlet property="nameLabel" destination="9qX-JB-gzZ" id="mmQ-ym-nUB"/>
+                        <outlet property="rollDiceButtonOutlet" destination="IMM-R8-cO1" id="JzJ-O1-6xH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="380" y="337"/>
         </scene>
     </scenes>
 </document>
